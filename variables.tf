@@ -403,3 +403,9 @@ variable "bucket_key_enabled" {
   For more information, see: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-key.html
   EOT
 }
+
+variable "transition_default_minimum_object_size" {
+  type        = string
+  default     = "all_storage_classes_128K"
+  description = "The default minimum object size behavior applied to the lifecycle configuration"
+}
